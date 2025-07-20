@@ -1,3 +1,5 @@
+# [Youtube](https://youtu.be/Mc70SjV72ck?si=YO48PuBAeQ-2eivW)
+
 # Kolla-Ansible Single Node Deployment Guide
 
 This repository provides a concise summary of all the essential commands and steps required to deploy a single-node OpenStack cloud using Kolla-Ansible. The guide is based on a practical walkthrough and is suitable for anyone looking to set up a robust, production-ready OpenStack environment.
