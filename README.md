@@ -32,7 +32,7 @@ This file summarizes all the key commands used in a single-node OpenStack deploy
 ## System Preparation
 - `lsb_release -a` — Show OS version info
 - `id` — Show current user info
-- `sudo visudo` — Edit sudoers file for passwordless sudo
+- `sudo visudo` — Edit sudoers file for passwordless sudo (add `ubuntu   ALL=(ALL:ALL) NOPASSWD:ALL`)
 - `nproc` — Show number of CPU cores
 - `free -mh` — Show memory info
 - `show BIOS` — Check BIOS settings (generic)
