@@ -1,0 +1,35 @@
+workaround_ansible_issue_8743: yes
+kolla_base_distro: "ubuntu"
+kolla_internal_vip_address: "192.168.80.50"
+network_interface: "eth0"
+neutron_external_interface: "eth1"
+
+enable_ceph: "no"
+
+glance_backend_ceph: "yes"
+ceph_glance_user: "glance"
+ceph_glance_keyring: "ceph.client.glance.keyring"
+ceph_glance_pool_name: "images"
+
+enable_cinder: "yes"
+cinder_backend_ceph: "yes"
+ceph_cinder_user: "cinder"
+ceph_cinder_keyring: "ceph.client.cinder.keyring"
+ceph_cinder_pool_name: "volumes"
+
+enable_cinder_backup: "yes"
+ceph_cinder_backup_user: "cinder"
+ceph_cinder_backup_keyring: "ceph.client.cinder.keyring"
+ceph_cinder_backup_pool_name: "backups"
+
+nova_backend_ceph: "yes"
+ceph_nova_user: "nova"
+ceph_nova_keyring: "ceph.client.nova.keyring"
+ceph_nova_pool_name: "vms"
+
+ceph_fsid: "a57e20a8-7ec4-11f0-bc7b-00155d0a2cc4"
+ceph_monitors:
+  - "192.168.80.65:6789"
+  - "192.168.80.68:6789"
+  - "192.168.80.69:6789"
+cinder_backup_driver: "ceph"
